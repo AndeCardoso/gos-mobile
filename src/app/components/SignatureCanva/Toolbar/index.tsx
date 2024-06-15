@@ -12,10 +12,10 @@ export const Toolbar = ({ onClearAll, onUndo }: IToolbarProps) => {
   return (
     <Container>
       <Pressable onPress={onClearAll}>
-        <Icon name="trash-can" size={24} />
+        <Icon name="trash-can" color="PRIMARY" size={24} />
       </Pressable>
       <Pressable onPress={onUndo}>
-        <Icon name="undo" size={24} />
+        <Icon name="undo" color="PRIMARY" size={24} />
       </Pressable>
     </Container>
   );

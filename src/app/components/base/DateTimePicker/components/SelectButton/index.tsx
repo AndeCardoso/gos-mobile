@@ -50,7 +50,9 @@ export const InputButton = ({
       activeOpacity={1}
     >
       {value ? (
-        <Text color={disabled ? "SECONDARY_INACTIVE" : "WHITE"}>{value}</Text>
+        <Text color={disabled ? "SECONDARY_INACTIVE_OPACITY" : "SECONDARY"}>
+          {value}
+        </Text>
       ) : (
         <Text color={disabled ? "SECONDARY" : "SECONDARY_INACTIVE"}>
           {placeholder}
@@ -60,7 +62,7 @@ export const InputButton = ({
         <IconButton
           onPress={!disabled ? onPress : undefined}
           name={disabled ? "lock" : "calendar"}
-          color="WHITE"
+          color="SECONDARY"
         />
         {!required && isDirty && !disabled ? (
           <>
@@ -71,7 +73,7 @@ export const InputButton = ({
               disabled={disabled}
               onPress={handleClear}
               name={"close"}
-              color="WHITE"
+              color="SECONDARY"
             />
           </>
         ) : null}

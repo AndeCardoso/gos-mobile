@@ -22,6 +22,7 @@ export const Button = ({
   const style: ViewStyle = {
     flex: fullwidth ? 1 : 0,
     borderColor: colors.PRIMARY,
+    backgroundColor: mode === "outlined" ? colors.SECONDARY : colors.PRIMARY,
     borderWidth: mode === "text" ? 0 : 2,
     justifyContent: "center",
     borderRadius: 50,
