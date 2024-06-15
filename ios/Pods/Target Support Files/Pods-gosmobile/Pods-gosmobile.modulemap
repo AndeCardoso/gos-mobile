@@ -1,0 +1,6 @@
+module Pods_gosmobile {
+  umbrella header "Pods-gosmobile-umbrella.h"
+
+  export *
+  module * { export * }
+}
