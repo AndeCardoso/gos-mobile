@@ -1,4 +1,4 @@
-rootProject.name = 'gos-mobile'
+rootProject.name = 'GOS'
 
 dependencyResolutionManagement {
   versionCatalogs {

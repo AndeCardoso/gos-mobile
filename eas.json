@@ -10,7 +10,16 @@
     "preview": {
       "distribution": "internal"
     },
-    "production": {}
+    "production": {
+      "android": {
+        "buildType": "apk",
+        "channel": "production",
+        "env": {
+          "EXPO_PUBLIC_API_URL_IOS":"https://atenda.andersoncardoso.dev.br/api/",
+          "EXPO_PUBLIC_API_URL_ANDROID":"https://atenda.andersoncardoso.dev.br/api/"
+        }
+      }
+    }
   },
   "submit": {
     "production": {}

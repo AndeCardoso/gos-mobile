@@ -5,9 +5,15 @@
   "scripts": {
     "clean": "rm -rf .rncache && rm -rf node_modules && yarn cache clean && yarn install && cd ios && rm -rf Pods && pod install --repo-update && cd .. && say lets go",
     "start:dev": "NODE_ENV=development expo start",
+    "start:prd": "NODE_ENV=production expo start",
     "android:dev": "NODE_ENV=development expo run:android",
+    "android:prd": "NODE_ENV=production expo run:android",
+    "android:release": "eas build --platform android --local --profile production",
     "ios:dev": "NODE_ENV=development expo run:ios",
-    "web": "expo start --web"
+    "ios:prd": "NODE_ENV=production expo run:ios",
+    "web": "expo start --web",
+    "android": "expo run:android",
+    "ios": "expo run:ios"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.22.2",
@@ -26,6 +32,7 @@
     "expo-media-library": "~16.0.3",
     "expo-sharing": "~12.0.1",
     "expo-status-bar": "~1.12.1",
+    "expo-updates": "~0.25.19",
     "react": "18.2.0",
     "react-hook-form": "^7.50.1",
     "react-native": "0.74.1",

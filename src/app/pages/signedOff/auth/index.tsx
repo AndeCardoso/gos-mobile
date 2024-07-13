@@ -30,8 +30,8 @@ export const AuthPage = () => {
 
   const { control, handleSubmit, setError, watch } = useForm<IAuthForm>({
     defaultValues: {
-      email: "admin@test.com",
-      password: "123456",
+      email: "",
+      password: "",
     },
     mode: "onSubmit",
     resolver: yupResolver(authSchema),
